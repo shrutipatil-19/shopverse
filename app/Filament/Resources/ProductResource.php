@@ -88,7 +88,7 @@ class ProductResource extends Resource
                         'gray' => 'draft',
                     ]),
                 ImageColumn::make('image')
-                    ->disk('s3'),
+                    ->disk('public'),
                 TextColumn::make('category.name')->label('Category'),
                 TextColumn::make('brand.name')->label('Brand'),
                 TextColumn::make('user.name')->label('Added By'),
